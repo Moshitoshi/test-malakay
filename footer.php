@@ -17,7 +17,7 @@
  		<div class="row">
  			<div class="col-md-12">
  				<footer class="site-footer" id="colophon">
-
+					<div class="col-md-8"></div>
 				<div class="site-info">
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'malakay' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'malakay' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
