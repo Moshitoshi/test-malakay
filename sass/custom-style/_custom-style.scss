@@ -1,0 +1,52 @@
+ul.navbar-nav {
+    margin: 0;
+}
+
+
+.view {
+    /*overflow: hidden;*/
+    cursor: default;
+}
+
+.view .mask {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.view .mask {
+    position: absolute;
+    overflow: hidden;
+}
+
+.view img {
+    display: block;
+    position: relative;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 75vh;
+}
+.header-hero-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+}
+.hero__content.homepage-hero__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero__content {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+}
