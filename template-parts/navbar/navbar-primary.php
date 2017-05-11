@@ -34,7 +34,7 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<?php wp_nav_menu(
 						array(
-							'theme_location'  => 'primary',
+							'theme_location'  => 'primary-menu',
 							'container' 			=> false,
 							'container_id'    => 'navbarNavDropdown',
 							'menu_class'      => '',

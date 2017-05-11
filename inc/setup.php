@@ -41,7 +41,6 @@ if ( ! function_exists( 'malakay_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary-menu' => __( 'Primary Menu', 'malakay' ),
-			'fullpage-menu' => __( 'Fullpage Menu', 'malakay' ),
 		) );
 
 		/*

@@ -17,37 +17,11 @@ get_header();
 $container   = get_theme_mod( 'malakay_container_type' );
 $sidebar_pos = get_theme_mod( 'malakay_sidebar_position' );
 ?>
-<?php if ( get_header_image() ) : ?>
 
-	<section class="hero">
-        <div class="header-hero-video">
-					<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-				</div>
-        <section class="hero__content homepage-hero__content">
-            <div class="container text-inverse">
-									<h1 class="entry-title">Benvenuto!</h1>
-									<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </section>
-</section>
-<!-- <div id="site-header">
-			<div class="view">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-				</a>
-				<div class="mask">
-			<div class="<?php echo esc_html( $container ); ?>">
-				<div class="row">
-					<div class="col-md-6">
-						<h1 class="entry-title">Benvenuto!</h1>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-</div> -->
-<?php endif; ?>
+<?php //get_template_part( 'template-parts/header/header', 'image' ); ?>
+<?php //get_template_part( 'template-parts/header/header', 'video' ); ?>
+<?php get_template_part( 'template-parts/header/header', 'carousel' ); ?>
+
 
 <div class="wrapper" id="wrapper-index">
 

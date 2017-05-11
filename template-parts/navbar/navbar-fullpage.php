@@ -21,7 +21,7 @@
 			<!-- The WordPress Menu goes here -->
 						<?php
 								wp_nav_menu( array(
-										'theme_location' => 'fullpage-menu',
+										'theme_location' => 'primary-menu',
 										'depth' => 2,
 										'container' => false,
 										'menu_class' => 'nav',
