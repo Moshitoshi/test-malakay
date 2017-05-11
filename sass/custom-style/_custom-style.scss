@@ -50,3 +50,14 @@ ul.navbar-nav {
     text-align: center;
     top: 40%;
 }
+
+.header-hero-video .custom-header::after {
+    background-color: rgba(0,51,86,0.75);
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
