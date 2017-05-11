@@ -25,30 +25,7 @@ $container = get_theme_mod( 'malakay_container_type' );
 
 <body <?php body_class(); ?>>
 
+	<?php get_template_part( 'template-parts/navbar/navbar', 'primary');?>
+	<?php get_template_part( 'template-parts/navbar/navbar', 'fullpage');?>
 
-	<div class="button_container" id="toggle">
-	  <span class="top"></span>
-	  <span class="middle"></span>
-	  <span class="bottom"></span>
-	</div>
-
-<div class="overlay" id="overlay">
-		<nav class="overlay-menu" id="navigation">
- 				<!-- The WordPress Menu goes here -->
-							<?php
-									wp_nav_menu( array(
-											'theme_location' => 'bootstrapmenu',
-											'depth' => 2,
-											'container' => false,
-											'menu_class' => 'nav',
-											'fallback_cb' => 'wp_page_menu',
-											//Process nav menu using our custom nav walker
-											'walker' => new wp_bootstrap_navwalker())
-									);
-									?>
-						</div><!-- .container -->
-					</nav><!-- .site-navigation -->
-						</div>
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+<div id="content" class="site-content">

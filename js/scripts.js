@@ -79,5 +79,12 @@ $container.isotope({ filter: selector });
 
 return false;
 });
+
+// navbar fullpage
+
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
 });
 });

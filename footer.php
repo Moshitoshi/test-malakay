@@ -36,17 +36,6 @@
 		</div><!-- wrapper end -->
 
 		</div><!-- #page -->
-      <script>
-      jQuery.noConflict()(function($){
-          "use strict";
-          $('#toggle').click(function() {
-             $(this).toggleClass('active');
-             $('#overlay').toggleClass('open');
-            });
-          });
-      </script>
 		<?php wp_footer(); ?>
-
 		</body>
-
 		</html>

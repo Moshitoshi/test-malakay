@@ -40,7 +40,8 @@ if ( ! function_exists( 'malakay_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => __( 'Primary Menu', 'malakay' ),
+			'primary-menu' => __( 'Primary Menu', 'malakay' ),
+			'fullpage-menu' => __( 'Fullpage Menu', 'malakay' ),
 		) );
 
 		/*
@@ -121,10 +122,3 @@ if ( ! function_exists( 'all_excerpts_get_more_link' ) ) {
 	}
 }
 add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
-
-
-
-if ( function_exists( 'register_nav_menus' ) ) {
-
-    register_nav_menu( 'bootstrapmenu', __( 'Nav Custom', 'malakay' ) );
-}
