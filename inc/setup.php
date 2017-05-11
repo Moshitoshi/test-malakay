@@ -121,3 +121,10 @@ if ( ! function_exists( 'all_excerpts_get_more_link' ) ) {
 	}
 }
 add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
+
+
+
+if ( function_exists( 'register_nav_menus' ) ) {
+
+    register_nav_menu( 'bootstrapmenu', __( 'Nav Custom', 'malakay' ) );
+}

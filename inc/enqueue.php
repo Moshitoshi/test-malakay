@@ -12,6 +12,7 @@
  function malakay_scripts() {
  	wp_enqueue_style( 'malakay-style', get_stylesheet_uri() );
  	wp_enqueue_style( 'malakay-styles', get_stylesheet_directory_uri() . '/sass/malakay.min.css', array(), '0.0.0' );
+  wp_enqueue_style( 'navbarfullpage', get_stylesheet_directory_uri() . '/sass/navbarfullpage.min.css', array(), '0.0.0' );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '4.0.0', true );
