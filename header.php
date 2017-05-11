@@ -33,10 +33,8 @@ $container = get_theme_mod( 'malakay_container_type' );
 	</div>
 
 <div class="overlay" id="overlay">
-		<nav class=" overlay-menu " id="navigation">
-
+		<nav class="overlay-menu" id="navigation">
  				<!-- The WordPress Menu goes here -->
-
 							<?php
 									wp_nav_menu( array(
 											'theme_location' => 'bootstrapmenu',
