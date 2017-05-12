@@ -47,7 +47,9 @@
         					<div class="custom-header">
         							<div class="custom-header-media">
         									<div id="wp-custom-header" class="wp-custom-header">
-        										<img src="http://localhost:8888/malakay/wp-content/themes/test-malakay/assets/images/header.jpg" alt="Malakay" width="2000" height="600">
+
+        										<img src="<?php the_post_thumbnail(); ?>" alt="Malakay" width="2000" height="600">
+
         									</div>
         							</div>
         					</div><!-- .custom-header -->

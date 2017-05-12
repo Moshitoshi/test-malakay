@@ -26,6 +26,7 @@ $container = get_theme_mod( 'malakay_container_type' );
 <body <?php body_class(); ?>>
 
 	<?php get_template_part( 'template-parts/navbar/navbar', 'primary');?>
-	<?php get_template_part( 'template-parts/navbar/navbar', 'fullpage');?>
+	
 
 <div id="content" class="site-content">
+<?php get_template_part( 'template-parts/header/header', 'carousel');?>
