@@ -45,16 +45,9 @@
   						<div class="carousel-item <?php if ( $the_query->current_post == 0 ) : ?>active<?php endif; ?>">
                 <div class="header-hero-carousel">
         					<div class="custom-header">
-        							<div class="custom-header-media">
-        									<div id="wp-custom-header" class="wp-custom-header">
-
-        										<img src="<?php the_post_thumbnail(); ?>" alt="Malakay" width="2000" height="600">
-
-        									</div>
-        							</div>
+                    <img class="d-block img-fluid" src="<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url('header-carousel-thumb');} ?>" alt="Malakay">
         					</div><!-- .custom-header -->
         				</div>
-                  <!-- <img class="d-block img-fluid" src="http://localhost:8888/malakay/wp-content/themes/test-malakay/assets/images/header.jpg" alt="First slide"> -->
                     <section class="hero__content homepage-hero__content">
                         <div class="container text-inverse">
                             <h1 class="hero__title"><?php the_title(); ?></h1>

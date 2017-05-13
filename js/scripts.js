@@ -88,3 +88,35 @@ $('#toggle').click(function() {
   });
 });
 });
+// Beauty navbar
+jQuery.noConflict()(function($){
+		"use strict";
+
+		        // Show the navbar when the page is scrolled up
+		        var MQL = 1170;
+
+		        //primary navigation slide-in effect
+		        if ($(window).width() > MQL) {
+		            var headerHeight = $('#navbarBeauty').height();
+		            $(window).on('scroll', {
+		                    previousTop: 0
+		                },
+		                function() {
+		                    var currentTop = $(window).scrollTop();
+		                    //check if user is scrolling up
+		                    if (currentTop < this.previousTop) {
+		                        //if scrolling up...
+		                        if (currentTop > 0 && $('#navbarBeauty').hasClass('is-fixed')) {
+		                            $('#navbarBeauty').addClass('is-visible');
+		                        } else {
+		                            $('#navbarBeauty').removeClass('is-visible is-fixed');
+		                        }
+		                    } else if (currentTop > this.previousTop) {
+		                        //if scrolling down...
+		                        $('#navbarBeauty').removeClass('is-visible');
+		                        if (currentTop > headerHeight && !$('#navbarBeauty').hasClass('is-fixed')) $('#navbarBeauty').addClass('is-fixed');
+		                    }
+		                    this.previousTop = currentTop;
+		                });
+		        }
+}); // End of use strict

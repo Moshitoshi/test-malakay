@@ -59,6 +59,7 @@ if ( ! function_exists( 'malakay_setup' ) ) :
 		 * Adding Thumbnail basic support
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'header-carousel-thumb', 2000, 600, true );
 
 		/*
 		 * Adding support for Widget edit icons in customizer
