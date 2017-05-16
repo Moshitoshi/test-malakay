@@ -24,7 +24,8 @@ $container = get_theme_mod( 'malakay_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
-
+	<?php //get_template_part( 'template-parts/navbar/navbar', 'primary');?>
+	<?php //get_template_part( 'template-parts/navbar/navbar', 'fullpage');?>
 	<?php get_template_part( 'template-parts/navbar/navbar', 'beauty');?>
 
 

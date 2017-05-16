@@ -24,27 +24,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
+# Variables
 # Bootstrap
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+# Malakay style
+  ## Navbar
+  ## Header
+  ## Media
+
 
 /*--------------------------------------------------------------
 # Normalize
@@ -52,61 +38,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 
 /*--------------------------------------------------------------
-# Custom Theme Style
+# Variables
 --------------------------------------------------------------*/
-@import "custom-style/custom-style";
-
-
-/*--------------------------------------------------------------
-# Custom Navbar
---------------------------------------------------------------*/
-@import "navbar/navbarfullpage";
-@import "navbar/navbar-beauty";
-
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
+@import "variables";
 
 /*--------------------------------------------------------------
 # Bootstrap
@@ -114,11 +48,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "assets/bootstrap";
 
 /*--------------------------------------------------------------
-# Infinite scroll
+# Custom Malakay Style
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+@import "malakay-style/style";
 
 /*--------------------------------------------------------------
-# Media
+# Malakay Navbar
+--------------------------------------------------------------*/
+@import "malakay-style/navbar/all-navbar";
+
+/*--------------------------------------------------------------
+# Malakay Header
+--------------------------------------------------------------*/
+@import "malakay-style/header/all-header";
+
+
+/*--------------------------------------------------------------
+# Malakay Media
 --------------------------------------------------------------*/
 @import "media/media";

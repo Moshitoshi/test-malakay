@@ -1,89 +1,3 @@
-ul.navbar-nav {
-    margin: 0;
-}
-
-
-.view {
-    /*overflow: hidden;*/
-    cursor: default;
-}
-
-.view .mask {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-.view .mask {
-    position: absolute;
-    overflow: hidden;
-}
-
-.view img {
-    display: block;
-    position: relative;
-}
-.hero {
-    position: relative;
-    overflow: hidden;
-    height: 75vh;
-}
-.header-hero-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
-    position: relative;
-}
-.hero__content.homepage-hero__content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.hero__title {
-    font-size: 45px;
-    font-size: 3.21429rem;
-    line-height: 1.3;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
-    text-shadow: 0 2px 0px rgba(0,0,0,0.1);
-}
-
-.hero__subtitle {
-    font-size: 22px;
-    font-size: 1.57143rem;
-    line-height: 1.3;
-    font-weight: normal;
-    color: #fff;
-    text-shadow: 0 2px 0px rgba(0,0,0,0.1);
-}
-
-.hero__content {
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-}
-
-.header-hero-image .custom-header::after {
-    background-color: rgba(0,51,86,0.75);
-    bottom: 0;
-    content: "";
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-
-
-// header video
 .header-hero-video {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,7 +51,7 @@ ul.navbar-nav {
 }
 
 .header-hero-video #video-container:after {
-    background-color: rgba(0,51,86,0.75);
+    background-color: $mlk-bg-inverse;
     bottom: 0;
     content: "";
     left: 0;
@@ -195,22 +109,4 @@ ul.navbar-nav {
 
 #hero-vimeo-video .close-hero-vimeo-video:hover:after {
     background: rgba(255,255,255,0.2)
-}
-
-
-// Header carousel
-
-.header-hero-carousel .custom-header::after {
-    background-color: rgba(0,51,86,0.75);
-    bottom: 0;
-    content: "";
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.text-inverse{
-  color:white!important;
 }

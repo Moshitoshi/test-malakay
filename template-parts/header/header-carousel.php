@@ -23,19 +23,13 @@
   			<div id="carouselExampleIndicators" class="hero carousel slide" data-ride="carousel">
   				<!-- Indicators -->
   				<ol class="carousel-indicators">
-
   					<!-- the Loop -->
   					<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-  						<li data-target="#carouselExampleIndicators"
-  						    data-slide-to="<?php echo $the_query->current_post; ?>"
-  						    class="<?php if ( $the_query->current_post == 0 ) : ?>active<?php endif; ?>"></li>
+  						<li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $the_query->current_post; ?>" class="<?php if ( $the_query->current_post == 0 ) : ?>active<?php endif; ?>"></li>
   					<?php endwhile; endif; ?>
-
   				</ol>
-
   				<!-- rewind loop back to zero without losing data-->
   				<?php rewind_posts(); ?>
-
   				<!-- Wrapper for slides -->
   				<div class="carousel-inner" role="listbox">
 

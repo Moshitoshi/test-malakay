@@ -1,0 +1,12 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+$gradient-blu:  rgba(2, 117, 216, 0.65) !default;
+$gradient-dark:  rgba(27, 27, 27, 0.65) !default;
+
+
+// Reassign color vars to semantic color scheme
+$mlk-bg-primary:             $gradient-blu !default;
+$mlk-bg-inverse:             $gradient-dark !default;

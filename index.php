@@ -22,8 +22,9 @@ $sidebar_pos = get_theme_mod( 'malakay_sidebar_position' );
 <?php //get_template_part( 'template-parts/header/header', 'video' ); ?>
 <?php get_template_part( 'template-parts/header/header', 'carousel' ); ?>
 
-
 <div class="wrapper" id="wrapper-index">
+
+<?php get_template_part( 'template-parts/section/content', 'modal' ); ?>
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
