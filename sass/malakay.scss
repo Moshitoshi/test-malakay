@@ -28,8 +28,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Bootstrap
 # Malakay style
   ## Navbar
+  ## Modal
   ## Header
-  ## Media
+# Media
 
 
 /*--------------------------------------------------------------
@@ -56,6 +57,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Malakay Navbar
 --------------------------------------------------------------*/
 @import "malakay-style/navbar/all-navbar";
+
+
+/*--------------------------------------------------------------
+# Malakay Header
+--------------------------------------------------------------*/
+@import "malakay-style/modal/modal";
+
 
 /*--------------------------------------------------------------
 # Malakay Header

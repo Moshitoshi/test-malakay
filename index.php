@@ -24,7 +24,7 @@ $sidebar_pos = get_theme_mod( 'malakay_sidebar_position' );
 
 <div class="wrapper" id="wrapper-index">
 
-<?php get_template_part( 'template-parts/section/content', 'modal' ); ?>
+<?php get_template_part( 'template-parts/section/content', 'modal-m' ); ?>
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
