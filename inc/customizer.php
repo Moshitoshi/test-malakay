@@ -104,3 +104,8 @@ function malakay_customize_preview_js() {
 	wp_enqueue_script( 'malakay_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'malakay_customize_preview_js' );
+
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'miniatura', 150, 150, true); //(immagine ritagliata)
+
+}
