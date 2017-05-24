@@ -23,7 +23,7 @@
                 <li class="timeline-inverted">
                   <?php } ?>
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="<?php the_post_thumbnail('miniatura'); ?>" alt="immagini post">
+                    <img class="rounded-circle img-fluid" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
