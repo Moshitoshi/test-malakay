@@ -17,11 +17,7 @@
     <div class="col-lg-12">
         <ul class="timeline">
           <?php while ( $loop->have_posts() ) : $loop->the_post(); $i++; ?>
-            <?php if ($i % 2 != 0) { ?>
-            <li>
-              <?php } else { ?>
-                <li class="timeline-inverted">
-                  <?php } ?>
+            <?php if ($i % 2 != 0) { echo '<li>';} else { echo '<li class="timeline-inverted">';} ?>
                 <div class="timeline-image">
                     <img class="rounded-circle img-fluid" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="">
                 </div>
