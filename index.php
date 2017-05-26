@@ -27,8 +27,9 @@ $sidebar_pos = get_theme_mod( 'malakay_sidebar_position' );
 
 <?php //get_template_part( 'template-parts/section/content', 'modal' ); ?>
 <?php //get_template_part( 'template-parts/section/content', 'timeline' ); ?>
-<?php get_template_part( 'template-parts/section/content', 'post-tile' ); ?>
+<?php //get_template_part( 'template-parts/section/content', 'tile' ); ?>
 <?php //get_template_part( 'template-parts/section/content', 'modal-m' ); ?>
+<?php get_template_part( 'template-parts/section/content', 'tile2' ); ?>
 
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
