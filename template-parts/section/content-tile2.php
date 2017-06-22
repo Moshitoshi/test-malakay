@@ -16,8 +16,9 @@
 <div class="row">
           <?php while ( $loop->have_posts() ) : $loop->the_post(); $i++; ?>
             <?php if ($i % 3 == 1) { ?> <div class="col-md-8"> <?php } else { ?> <div class="col-md-4"> <?php } ?>
-                    <img class=" img-fluid" src="<?php the_post_thumbnail_url(''); ?>" alt="" style="height: 100%;">
-                </div>
+                    <a href="<?php echo get_permalink();?>"><img class=" img-fluid" src="<?php the_post_thumbnail_url(''); ?>" alt="" style="height: 100%;">
+</a>
+								</div>
             <?php endwhile; wp_reset_postdata(); ?>
       </div>
     </div>
